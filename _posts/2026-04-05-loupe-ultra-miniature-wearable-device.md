@@ -42,15 +42,6 @@ To overcome these physical and energetic limitations, we developed a highly spec
 
 ![Components](/assets/img/projects/loupe/page4_img3.jpeg)
 
-## Firmware & System Architecture
-
-Alongside the hardware, our software logic was heavily optimized for power consumption:
-*   **Development Stack**: Written in C/C++ running on the **Zephyr RTOS**.
-*   **Power Optimization Strategy**: 
-    1. Event-driven interrupts triggered directly by the accelerometer motion.
-    2. Deep-sleep modes dynamically enabled during idle periods to minimize power draw.
-*   **Connectivity**: Physiological data is transmitted via BLE to a mobile application for real-time visualization and analysis.
-
 ## Industrial Design & Timeline
 
 *   **Enclosure**: The prototype housing is constructed from ABS plastic and resin, designed flexibly to support future iterations with improved durability and refined ergonomics.
@@ -58,8 +49,6 @@ Alongside the hardware, our software logic was heavily optimized for power consu
 ![Prototype](/assets/img/projects/loupe/page6_img1.jpeg)
 
 *   **Development Timeline**: 
-    - PCB Design: 2 weeks
-    - Firmware Development: 2 weeks
-    - **Total MVP Development Time: ~4 weeks**.
+    - PCB Design: 1 week
 
 The **Loupe** minimum viable product successfully validated the feasibility of designing a sensor-rich wearable at an astonishingly small scale, while still maintaining highly aggressive power-saving targets.
