@@ -1,0 +1,77 @@
+Product Showcase
+ Loupe: Ultra-Miniature Wearable Device
+We’re excited to walk you through the future of technology. Together, we’ll
+explore how innovation can shape better experiences for all of us.
+Product Overview
+Loupe is an ultra-compact wearable device designed with a
+singular focus: maximum power efficiency in an extremely
+small form factor. The project demonstrates DevBriX’s capability
+to engineer reliable, sensor-accurate wearables under severe
+size and energy constraints.
+Our key
+challenges
+Extreme PCB miniaturization, limiting component
+placement and routing flexibility
+Maintaining sensor accuracy (heart rate & body
+temperature) despite tight space and ultra-low
+power operationDesigning Loupe required overcoming two major technical
+bottlenecks: Balancing size, precision, and battery life
+2-layer flex PCB, optimized for extreme size constraints
+Epoxy conformal coating applied after final assembly for moisture
+and durability protection
+ Ultra-small 3.7V Li-Po battery
+Magnetic pogo-pin connector for compact and reliable charging
+Our SolutionsHardwareMCU: Nordic nRF52832 Chosen for its ultra-low power consumption, compact footprint,
+and native BLE support—ideal for miniature wearables.PCB & Power DesignPrimary Sensor:
+MAXM86161
+Additional Sensors:A next-generation optical heart-rate sensor integrating Green, Red,
+IR LEDs and a single photodiode, enabling high-precision
+measurements within minimal PCB area.
+Accelerometer for motion and event-based wake-up
+Infrared body-temperature sensor for physiological
+monitoring
+PCB: 
+Protection: 
+Power Source:
+Charging: 
+2-layer flex PCB, optimized for extreme size constraints
+Epoxy conformal coating applied after final assembly for moisture
+and durability protection
+ Ultra-small 3.7V Li-Po battery
+Magnetic pogo-pin connector for compact and reliable charging
+Our SolutionsHardwareMCU: Nordic nRF52832 Chosen for its ultra-low power consumption, compact footprint,
+and native BLE support—ideal for miniature wearables.PCB & Power DesignPrimary Sensor:
+MAXM86161
+Additional Sensors:A next-generation optical heart-rate sensor integrating Green, Red,
+IR LEDs and a single photodiode, enabling high-precision
+measurements within minimal PCB area.
+Accelerometer for motion and event-based wake-up
+Infrared body-temperature sensor for physiological
+monitoring
+PCB: 
+Protection: 
+Power Source:
+Charging: 
+Our Solutions
+Firmware & system logic
+Development Stack: C/C++ with Zephyr RTOS
+Power Optimization
+Strategy:Event-driven interrupts triggered by accelerometer motion
+Deep-sleep modes enabled during idle periods to minimize
+power draw
+Connectivity
+Protocol: Bluetooth Low Energy (BLE)
+The nRF52832 connects directly to a
+mobile application, transmitting
+collected physiological data for
+visualization and analysis.Enclosure & Industrial
+DesignPrototype Housing: ABS plastic or resin
+(for rapid prototyping versions)
+Designed to support future iterations with
+improved durability and refined
+ergonomics.
+PCB Design: 2 weeks
+Firmware Development: 2 weeks
+Total MVP Development Time: ~4 weeks
+The project successfully validated the feasibility of a sensor-rich wearable at
+an extremely small scale, while maintaining aggressive power-saving targets.Key results
