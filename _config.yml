@@ -1,4 +1,4 @@
-﻿# The Site Configuration
+# The Site Configuration
 
 # Import the theme
 theme: jekyll-theme-chirpy
@@ -14,7 +14,7 @@ timezone: Asia/Ho_Chi_Minh
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: My Projects
+title: LOO
 
 tagline: Projects Portfolio
 
