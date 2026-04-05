@@ -1,8 +1,8 @@
 import fitz
 import os
 
-pdf_path = r"E:\Tech\My-Projects\_posts\Loupe - Product Showcase (no contact).pdf"
-out_dir = r"E:\Tech\My-Projects\assets\img\projects\loupe"
+pdf_path = r"E:\Tech\My-Projects\_posts\Mạng lưới mạng khí hậu trong.pdf"
+out_dir = r"E:\Tech\My-Projects\assets\img\projects\microclimate"
 os.makedirs(out_dir, exist_ok=True)
 
 doc = fitz.open(pdf_path)

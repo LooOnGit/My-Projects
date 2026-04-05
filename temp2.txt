@@ -1,0 +1,108 @@
+MẠNG LƯỚI TRẠM KHÍ HẬU
+trong giám sát nhiễm mặn
+Giới thiệu
+Giảng viên hướng dẫn:TS. CAO VĂN KIÊN
+Sinh viên:Trần Công Hòa
+Nguyễn Trí Thức
+Nội dung trình bày
+01 Tổng quan
+02 Phân tích và thiết kế hệ thống
+03 Xây dựng và triển khai hệ thống
+04 Đánh giá
+Tổng quan
+1.1 Đặt vấn đề
+Việt Nam giữ vị trí cao cụ thể là vị trí thứ 3 về xuất khẩu gạo.
+Mà trong đó nguồn nước ngọt là nguồn tài nguyên thiết yếu
+dành cho nông nghiệp, chiếm 82% tổng lượng nước tưới.
+Vấn đề: 
+Biến đổi khí hậu làm gia tăng xâm nhập mặn, nước biển
+dâng cao khiến cho xâm nhập sâu ăn vào đất liền làm ảnh
+hưởng trực tiếp đến sản xuất nông nghiệp vùng ven vviển
+Tổng quan
+1.2 Mục tiêu
+Xây dựng hệ thống giám sát xâm nhập mặn ứng dụng công nghệ AIoT (Trí tuệ nhân tạo và Internet vạn
+vật) để hỗ trợ ngành nông nghiệp trong bối cảnh biến đổi khí hậu.
+Phân tích và thiết kế hệ thống
+2.1 Yêu cầu hệ thống
+Board mạch sử dụng thu thập dữ liệu từ cảm biến đo
+độ mặn, nhiệt độ, độ ẩm,...
+Có các chức năng giao tiếp không dây Lora để kết
+nối các trạm đo gần đó.
+Có module sim 4G để gửi dữ liệu lên server.Chương trình thu thập dữ liệu gửi lên server.
+Có khả năng kết nối các trạm gần đó tạo thành
+mạng để chuyển tiếp/gửi dữ liệu.
+Chương trình giám sát hoạt động các trạm đo.
+Phần mềm phải có thêm các tiêu chuẩn bảo mật dữ
+liệu.Phần Cứng Phần mềm
+Phân tích và thiết kế hệ thống
+2.2 Kiến trúc hệ thống
+Phân tích và thiết kế hệ thống
+2.2 Node
+Phân tích và thiết kế hệ thống
+2.2 Node
+
+Phân tích và thiết kế hệ thống
+2.3 Gateway
+Phân tích và thiết kế hệ thống
+2.3 Gateway
+
+Xây dựng và triển khai hệ thống
+3.1 Phần cứng hoàn thiện tích hợp phần mềm
+Gateway Node
+(Độ mặn)Node
+(Nhiệt độ, độ ẩm)
+Xây dựng và triển khai hệ thống
+3.2 Mô hình AI
+
+Xây dựng và triển khai hệ thống
+3.2 Mô hình AI
+Phương pháp cửa sổ
+Kiến trúc mô hình
+Xây dựng và triển khai hệ thống
+3.2 Mô hình AI
+Quá trình huấn luyện
+Xây dựng và triển khai hệ thống
+3.2 Mô hình AI
+Kết quả
+Mô hình đầu tiên
+Mô hình đã điều chỉnh
+Xây dựng và triển khai hệ thống
+3.3 Ứng dụng di động
+Xây dựng và triển khai hệ thống
+3.4 Lắp đặt thực tế
+Xây dựng và triển khai hệ thống
+3.5 Server
+Xây dựng và triển khai hệ thống
+3.6 Ứng dụng di động
+Xây dựng và triển khai hệ thống
+3.6 Ứng dụng di động
+
+Xây dựng và triển khai hệ thống
+3.7 API
+Triển khai API
+Kết quả chạy API
+Đánh giá và kiến nghị
+4.1 Đánh giá phần cứng
+Đã xây dựng được các node để lấy các giá trị độ mặn, độ ẩm, nhiệt độ và lượng
+nước.
+Đã có các module LoRa được trang bị trên các board từ node đến gateway.
+Có 2 giải pháp để kết nối mạng gửi dữ liệu về server là bằng 4G và Wifi.
+Truyền nhận dữ liệu từ gateway với node thì trong thời gian qua đang rất ổn định.
+Đánh giá và kiến nghị
+4.2 Đánh giá phần mềm
+Đưa ra được gateway lấy được dữ liệu và gửi đến server ThingSpeak.
+Các node và gateway tự liên kế với nhau tạo thành mạng lưới.
+Có app để theo dõi giá trị đó được và đồng thời app này có thể xem được kết quả
+dự đoán giá trị độ mặn cho tương lai.
+Phần mềm có tiêu chuẩn bảo mật dữ liệu bằng hình thức đăng nhập thông dụng
+dùng id người dùng và mật mã được cấp.
+Đánh giá và kiến nghị
+4.3 Điểm hạn chế
+Chưa đủ chi phí để mua những máy đo trên thị trường để so sánh độ chính xác của
+giá trị cảm biến.
+Server đang dùng của thingspeak cung cấp miễn phí nên còn 1 số giới hạn trong
+việc cài đặt.
+Không có server public để setup cho AI nên còn 1 số hạn chế về phần dự đoán các
+giá trị của cảm biến trong tương lai.
+Công suất tiêu tụ của thiết bị quá lớn, nếu dùng pin trong điều kiện không lý
+tưởng chỉ được vài ngày. 
