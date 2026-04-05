@@ -35,12 +35,12 @@ The central hub of the local LoRa mesh. The Gateway acts as the master, receivin
 ### 2. Node 1 (Salinity Station)
 A sensor node specifically tasked with evaluating water quality. It securely measures the local water's salinity levels.
 
-![Node 1](/assets/img/projects/microclimate/page12_img2.png)
+![Node 2](/assets/img/projects/microclimate/page12_img3.png)
 
 ### 3. Node 2 (Temperature & Humidity Station)
 Additional environmental nodes responsible for analyzing the local climate, measuring both temperature and humidity.
 
-![Node 2](/assets/img/projects/microclimate/page12_img3.png)
+![Node 1](/assets/img/projects/microclimate/page12_img2.png)
 
 
 ## Artificial Intelligence (AI)

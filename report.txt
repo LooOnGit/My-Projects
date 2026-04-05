@@ -1,0 +1,1682 @@
+TRƯỜNG
+ 
+ĐẠI
+ 
+HỌC
+ 
+CÔNG
+ 
+NGHIỆP
+ 
+TP.
+ 
+HCM
+KHOA
+ 
+CÔNG
+ 
+NGHỆ
+ 
+ĐIỆN
+ 
+TỬ
+BÁO CÁO ĐỒ ÁN - DỰ ÁN 
+AIIOT
+ỨNG DỤNG XỬ LÝ ẢNH TRONG PHÂN LOẠI 
+SẢN PHẨM
+                           
+                      
+                  
+ 
+   
+SVTH:
+  
+Tưởng Quang Linh
+        
+20125041
+      Trần Công Hòa
+        
+    
+20029891
+      
+Bùi Mĩ Trung Hiếu
+        20097651
+                                                      
+ 
+Nguyễn Tri Thức
+           20017691
+                       
+                  
+LỚP:
+ 
+DHIOT16B
+                       
+                  
+GVHD:
+ 
+Trần Văn Hùng
+TP.HCM – 2024
+TRƯỜNG
+ 
+ĐẠI
+ 
+HỌC
+ 
+CÔNG
+ 
+NGHIỆP
+ 
+TP.
+ 
+HCM
+KHOA
+ 
+CÔNG
+ 
+NGHỆ
+ 
+ĐIỆN
+ 
+TỬ
+BÁO CÁO ĐỒ ÁN - DỰ ÁN AIIOT
+ỨNG DỤNG XỬ LÝ ẢNH TRONG PHÂN LOẠI SẢN PHẨM
+                                            
+SVTH:
+  Tưởng Quang Linh
+        
+20125041
+      Trần Công Hòa
+        
+    
+20029891
+      Bùi Mĩ Trung Hiếu        20097651
+                                                      
+ 
+Nguyễn Tri Thức           20017691
+                                         
+LỚP:
+ DHIOT16B
+                                         
+GVHD:
+ 
+Trần Văn Hùng
+TP.HCM – 2024
+NHIỆM VỤ
+Họ tên sinh viên:
+ Tưởng Quang Linh   
+MSSV:
+ 
+20125041
+Họ tên sinh viên:
+ Trần Công Hòa         
+MSSV:
+ 
+20029891
+Họ tên sinh viên:
+ Nguyễn Tri Thức      
+MSSV:
+ 20017691
+Họ tên sinh viên:
+ Bùi Mĩ Trung Hiếu   
+MSSV:
+ 20097651
+I.TÊN ĐỀ TÀI
+: ỨNG DỤNG XỬ LÍ 
+ẢNH  TRONG
+ PHÂN LOẠI SẢN PHẨM
+II. NHIỆM VỤ
+ 
+ 
+Các số liệu ban 
+đầu
+Một kit 
+JetsonNano,ArmRobotic
+ 
+5
+ DOF
+, hộp chứa các sản phẩm
+ , sản phẩm bao gồm các màu sắc violet, red, green,blue
+Nội dung thực hiện
+Cài đặt hệ điều hành cho Jetson Nano
+Dùng Yolov8 xử lí nhận diện màu sắc
+Giao tiếp UART điều khiển cánh tay
+Điều khiển relay đóng ngắt động cơ
+Hiển thị giao diện Node-red thông qua giao thức HTTP
+Tp.HCM, ngày
+ 
+21
+.tháng
+ 3 
+.năm 202
+4
+Giáo viên hướng dẫn
+    
+Trần Văn Hùng
+LỊCH TRÌNH THỰC HIỆN DỰ ÁN
+STT
+Nội dung
+Thời gian nghiên cứu
+N
+gười thực hiện
+1
+2
+3
+4
+5
+1
+Cài hệ điều hành cho board Jetson, cắt mica khung hộp dựng màu, tạo các vật màu để nhận 
+dạng,đưa
+ ra thuật toán nhận diện màu , nhận diện dừng băng chuyền, node red , 
+giao thức http
+x
+ 
+ 
+ 
+ 
+ALL MEMBER
+2
+Gán lable để train dữ liệu, thực thi thuật toán nhận diện màu, nhận diện dừng băng tải, test các phần cứng 
+( uart
+ , relay, camera, động cơ băng chuyền)
+ 
+x
+ 
+ 
+ 
+ALL MEMBER
+3
+Tiến hành lắp ráp phần cứng khung hoạt động của ARM 
+ROBOTIC ,
+ hộp đựng màu ,demo điều khiển cánh tay gắp vật 
+ 
+ 
+x
+ 
+ 
+ALL MEMBER
+4
+Kiểm tra hoạt động của tay gắp có đúng yêu cầu phân loại vật đúng theo màu sắc
+ 
+ 
+ 
+x
+ 
+ALL MEMBER
+5
+Hoàn thiện mô hình 
+ 
+ 
+ 
+ 
+x
+ALL MEMBER
+ GV
+ 
+HƯỚNG
+ 
+DẪN
+(Ký
+ 
+và
+ 
+ghi rõ
+ 
+họ
+ 
+và
+ 
+tên)
+LỜI CẢM ƠN
+Trong suốt quá trình học tập, nghiên cứu và hoàn thành đề tài này, chúng em đã nhận được sự hướng dẫn, giúp đỡ quý báu của thầy cô, bạn bè và đồng nghiệp
+.
+Với lòng biết ơn sâu sắc, trước hết chúng em xin chân thành cảm ơn đến thầy 
+Trần Văn Hùng
+, người đã tận tình hướng dẫn, góp ý định hướng cho chúng em trong suốt quá trình thực hiện đề tài này. Chúng em cũng xin chân thành cảm ơn đến tất cả các quý thầy cô khoa Công Nghệ Điện Tử, Trường đại học Công Nghiệp TP.HCM, những người mà đã truyền đạt những kiến thức và kinh nghiệm quý báu mà chúng em nhận được trong suốt quá trình học tập tại trường
+.
+Cuối cùng, chúng em xin gửi lời tri ân đến
+ thầy cô 
+, bạn bè
+ đãn dành thời gain đọc và góp ý cho báo cáo của chúng em .
+Chúng em xin chân thành cảm ơn.
+Tp.HCM, ngày 2
+1
+ tháng 0
+3
+ năm 202
+4
+Nhóm sinh viên 
+thực hiện
+MỤC LỤC
+Nội dung
+   
+    
+Trang
+LỊCH TRÌNH THỰC HIỆN DỰ ÁN
+1
+LỜI CẢM ƠN
+2
+MỤC LỤC
+1
+BẢNG DANH MỤC HÌNH ẢNH
+1
+DANH MỤC BẢNG SỐ LIỆU
+1
+LỜI MỞ ĐẦU
+1
+CHƯƠNG 1
+2
+TỔNG QUAN
+2
+1.1.ĐẶT VẤN ĐỀ
+2
+1.2.MỤC TIÊU
+2
+1.3. NỘI DUNG NGHIÊN CỨU
+2
+1.4 GIỚI HẠN
+3
+CHƯƠNG 2
+4
+LÝ THUYẾT CƠ SỞ
+4
+1.CHỌN ĐỐI TƯỢNG
+4
+2.
+CƠ SỞ LÝ THUYẾT
+4
+1.1Chuẩn bị dữ liệu
+4
+1.2.
+Tiền xử lý
+4
+3.DỮ
+ TỔ CHỨC TẬP DỮ LIỆU (
+Organize Dataset
+)
+6
+4.TRAIN DỮ LIỆU
+7
+4.1
+Tạo tập dữ liệu (.YAML
+)
+7
+5.CẢI
+ TIẾN
+8
+5.1.
+Tập dữ liệu (.YAML)
+8
+6.
+MÔ PHỎNG
+12
+6.1.Chương
+ trình
+12
+6.2 Kết qủa nhận diện
+13
+7
+. 
+GIỚI THIỆU VỀ CAMERA LOGITECH HD
+15
+7.1.Giới
+ 
+thiệu
+15
+7.2.Thông
+ 
+tin
+ 
+cấu
+ 
+hình
+ 
+Jetson Nano
+16
+7.3. Ứng Dụng
+16
+8. GIỚI THIỆU VỀ ĐỘNG CƠ DC
+16
+9. ROBOT ARM
+17
+10. GIỚI THIỆU HỆ THỐNG BĂNG TẢI
+18
+11. GIỚI THIỆU HỆ ĐIỀU HÀNH TRÊN JETSON NANO
+20
+12.GIỚI THIỆU VỀ CÁC CHUẨN GIAO TIẾP
+21
+13.PHƯƠNG PHÁP PHÂN LOẠI SẢN PHẨM THEO MÀU SẮC
+22
+CHƯƠNG 3
+24
+THIẾT KẾ VÀ THI CÔNG MÔ HÌNH
+24
+3.1. Thiết kế
+24
+3.1.1. Sơ đồ khối và chức năng các
+ 
+khối
+24
+3.1.2.Chức năng của các khối
+24
+3.1.3. Sơ đồ kết nối toàn mạch
+24
+3.2.Thử nghiệm phần cứng:
+25
+3.3 Lưu đồ giải thuật
+36
+3.4 Code chạy điều khiển
+36
+KẾT LUẬN
+39
+TÀI LIỆU THAM KHẢO
+37
+BẢNG DANH MỤC HÌNH ẢNH
+Hình 1.1 ARM ROBOTIC 5DOF
+2
+Hình 1.2 Jetson nano
+3
+Hình 1.3  Băng chuyền
+3
+Hình 2.1 Chuẩn bị dữ liệu train
+4
+Hình 2.2 Màu xanh dương
+4
+Hình 2.3 Màu đỏ
+5
+Hình 2.4 Màu xanh lá
+5
+Hình 2.6 Chia dữ liệu train
+6
+Hình 2.7 Chia dữ liệu theo thư mục
+6
+Hình 2.8 Tạo file .yaml
+7
+Hình 2.9 Kết quả train
+7
+Hình 2.10 lựa chọn mô hình cải tiến
+8
+Hình 2.11 Kết quả sau cải tiến mô hình
+9
+Hình 2.12 Kết quả sau cải tiến mô hình
+9
+Hình 2.13 Kết quả sau cải tiến mô hình
+10
+Hình 2.14 Kết quả sau cải tiến mô hình
+10
+Hình 2.15 Kết quả sau cải tiến mô hình
+11
+Hình 2.16 Kết quả sau khi cải tiến mô hình
+11
+Hình 2.17 Kết quả sau cải tiến mô hình
+12
+Hình 2.18 Camera Logitech HD C270
+15
+Hình 2.19 Chi tiết bo mạch Jetson Nano
+16
+Hình 2.20 Động cơ DC
+17
+Hình 2.21: cánh tay robot (arm robotic 5dof)
+18
+Hình 2.22 Chi tiết băng chuyền
+19
+Hình 2.23 Hệ điều hành Jetson Nano
+20
+Hình 2.24 Giao thức UART
+21
+Hình 2.25 Truyền thông UART
+22
+Hình 2.27 Minh họa mô hình train
+23
+Hình 3.1 Sơ đồ khối
+24
+Hình 3.2 Sơ đồ kết nối toàn bộ hệ thống
+24
+Hình 3.3 Sơ đồ phần cứng điều khiển băng chuyền
+25
+Hình 3.4 Sơ đồ kết nối Server và giao diện
+25
+Hình 3.5 Cánh tay robot
+26
+Hình 3.6 Phần mềm điều khiển Servo
+27
+Hình 3.7 Test hoạt động cánh tay
+28
+Hình 3.8 Mô hình phân loại
+29
+Hình 3.9 Thi công mô hình phân loại
+29
+Hình 3.10 lắp camera
+30
+Hình 3.11 lắp biến trở và relay
+30
+Hình 3.12 Tiến hành thử nghiệm hoạt động băng chuyền
+31
+Hình 3.13 Phần mềm thiết kế hộp đựng board
+31
+Hình 3.14 Máy in 3D
+32
+Hình 3.15 Mặt trên hộp đựng
+32
+Hình 3.16 Mặt dưới hộp đựng
+33
+Hình 3.17 Cổng kết nối
+33
+Hình 3.18 Tiến hành in 3D
+34
+Hình 3.20 Kết quả in mặt sau
+35
+DANH MỤC BẢNG SỐ LIỆU
+Bảng 2.1 
+Kết quả train các màu
+14
+LỜI MỞ ĐẦU
+Ngày nay cùng với sự phát triển của các ngành khoa học kỹ thuật, kỹ thuật điện tử mà trong đó là kỹ thuật số đóng vai trò quan trọng trong mọi lĩnh vực khoa học kỹ thuật, quản lí, công nghiệp tự động hóa, cung cấp thông tin. Do đó chúng ta phải nắm bắt và vận dụng nó một cách có hiệu quả nhằm góp phần vào sự phát triển nền khoa học kỹ thuật thế giới nói chung và trong sự phát triển kỹ thuật điện tử nói riêng
+.
+ Xuất phát từ những bài học thực tập trên lớp và tham quan các doanh nghiệp sản xuất, chúng em đã được thấy nhiều khẩu được tự động hóa trong quá trình sản xuất. Một trong những khẩu đơn giản trong dây chuyền sản xuất tự động hóa đó là số lượng sản phẩm làm ra được đếm một cách tự động
+.
+Tuy nhiên đối với những doanh nghiệp vừa và nhỏ thì việc tự động hóa hoàn toàn chưa được áp dụng trong những khâu đếm sản phẩm, đóng bao bì mà vẫn còn sử dụng nhân công.Từ những điều đã được thấy và khả năng của chúng em, chúng em muốn làm một điều gì nhỏ để góp phần vào giúp người lao động bớt phần mệt nhọc chân tay mà cho phép tăng hiệu suất lao động lên gấp nhiều lần, đồng thời đảm bảo được độ chính xác. Nên chúng em quyết định thiết kế một mạch đếm sản phẩm vi nó rất gần gũi với thực tế.
+Qua việc thực hiện đề tài này, chúng em hy vọng sẽ có cơ hội tìm hiểu sâu hơn và củng cố được những kiến thức đã học ở trường, từ đó có thể ứng dụng được những kiến thức đã học vào thực tế. Việc thực hiện đề tài này cũng là bước đầu giúp chúng em làm quen với công tác nghiên cứu khoa học. Từ đó, nó sẽ giúp chúng em có được nền tảng cơ bản cho công việc nghiên cứu làm việc sau này. Đề tài này với hy vọng sẽ góp thêm một ý tưởng 
+mới 
+để từng bước hoàn thiện các mô hình đếm sản phẩm ngày nay.
+CHƯƠNG 1
+TỔNG QUAN
+ 
+1.
+1.
+ĐẶT
+ VẤN ĐỀ
+1
+.
+2.
+MỤC
+ TIÊU
+Để tài “Ứng
+ 
+dụng
+ 
+xử lý ảnh
+ 
+trong hệ
+ 
+thống
+ 
+phân loại sản phẩm” với mục
+ 
+tiêu là phân loại
+ 
+sản
+ 
+phẩm
+ 
+theo
+ 
+màu sắc
+ 
+(đỏ,
+ 
+xanh, vàng).
+ 
+Dựa trên ngôn ngữ Python với thư viện chính là OpenCV và được thực hiện trên 
+JetsonNano
+1.3.
+ 
+NỘI DUNG NGHIÊN C
+ỨU
+Để tài “Ứng dụng xử lý ảnh trong hệ thống phân loại sản phẩm” Có những nội dung sau:
+NỘI
+ 
+DUNG
+ 
+1:
+ 
+Phần nhận dạng
+Đối tượng nhận dạng: Nhận dạng đồ vật theo màu (
+violet,red,green,blue)
+Mục đích
+: Để phân loại sản phẩm và đếm số lượng
+NỘI
+ 
+DUNG
+ 
+2:
+ 
+Phần điều khiển
+Đối tượng điều khiển: Cánh tay g
+ắp
+Hình 1.1 ARM ROBOTIC 5DOF
+Bộ điều khiển: Jetson Nano nhằm mục đích xử lý ảnh, đồng thời ra quyết định dừng băng tải. Điều khiển tay gấp gấp vật.
+Hình 1.2 Jetson nano
+-
+Bộ cơ cấu chấp hành: Băng tải
+Hình 
+1.3  Băng
+ chuyền
+        
+NỘI
+ 
+DUNG
+ 
+3:
+ 
+Phần Thông Minh
+Phần thuật toán
+: 
+Sử dụng YoloV8 để nhận dạng màu
+Chương trình: 
+Nhận diện được (vị trí dừng) của vật trên băng chuyền ( dừng băng chuyền bằng relay đóng ngắt ) gắp vật tại vị trí dừng trên băng chuyền.
+Giao diện: theo phương pháp cổ điển thì hiển thị lên LCD nhưng nhóm có thêm phần sẽ gửi dữ liệu lên 
+thông qua gaio thức HTTP
+ và đồng thời hiển thị giao diện được thực hiện bằng node-red
+1.4 
+GIỚI HẠN
+Thời gian và tốc độ xử lí còn hơi 
+chậm ,
+ cùng với camera chụp ảnh không mong muốn ở điều kiện quá sáng, hoặc thiếu ánh sáng. Đề tài chỉ xây dựng với mô hình nhỏ gọn
+CHƯƠNG 2
+LÝ THUYẾT
+ CƠ SỞ
+1
+.CHỌN ĐỐI TƯỢNG
+Các đối
+ tượng màu: Xanh, Đỏ, 
+Tím,  Xanh
+ dương
+2
+.
+CƠ SỞ LÝ THUYẾT
+1.1
+Chuẩn bị dữ liệu
+Hình 2.1 Chuẩn bị dữ liệu train
+Cắt ảnh ra từ 5 video, tổng cộng có 1752 ảnh.
+1.
+2.
+Tiền
+ xử lý
+1.2.
+1.
+Phần
+ mềm sử dụng
+Vào phần mềm
+ “Make 
+Sense
+”
+Link: 
+https://www.makesense.ai/
+1.2.2. Thực hiện
+Màu xanh dương
+Hình 2.2 Màu xanh dương
+Màu đỏ
+Hình 2.3 Màu đỏ
+Màu xanh lá
+Hình 2.4 Màu xanh lá
+Màu tím
+Hình 2.5 Màu tím
+3
+.
+DỮ
+ TỔ CHỨC TẬP DỮ LIỆU (
+Organize Dataset
+)
+Cây thư mục
+Hình 2.6 Chia dữ liệu train
+Chia tỉ lệ cho folder train(images và lables) là 7/10. 
+Chia tỉ lệ cho folder val(images và lables) là 3/10.
+Hình 2.7 Chia dữ liệu theo thư mục
+4
+.
+T
+RAIN DỮ LIỆU
+4.1
+Tạo tập dữ liệu
+ (.YAML
+)
+H
+ì
+nh
+ 
+2.8 Tạo file .yaml
+Chương trình train model mới
+from 
+ultralytics 
+import 
+YOLO
+# Load a model
+model = YOLO(
+'yolov8n.yaml'
+)
+#model = YOLO('yolov8n.pt')
+# model = YOLO("D:\\Dev_Vision\\Project\\runs\detect\\train\\weights\\last.pt")
+if 
+__name__ == 
+'__main__'
+: 
+# can khi chay bang GPU
+    
+model.train(
+data
+=
+'dataset.yaml'
+,
+epochs
+=
+50
+,
+imgsz
+=
+640
+,
+batch
+=
+2
+,
+optimizer
+=
+'SGD'
+)
+    metrics = model.val()
+Kết quả sau khi train:
+Hình 2.9 Kết quả train
+Nhận xét:
+Thông số trong mục train, mAP50 train trung
+ bình thông số 0.932 
+và thông số mPA50-95 thì
+ có trùng bình là 0.795
+. 
+ Với thông số này nằm trong khoảng mong muốn của nhóm.
+5
+.
+CẢI
+ TIẾN
+      
+Vì
+ để chất lượng mô hình ra được tốt hơn thì trong quá trình nghiên cứu tài liệu nhóm đã phát hiện ra một số model được tạo từ trước từ YOLOV8 nên áp dụng để cải tiến. 
+Hình 2.10 lựa chọn mô hình cải tiến
+Quyết định chọn model yolov8n.
+5.
+1.
+Tập
+ dữ liệu
+ (.YAML)
+Không
+ thay đổi gì với ban đầu.
+Chương
+ trình
+from 
+ultralytics 
+import 
+YOLO
+# Load a model
+#model = YOLO('yolov8n.yaml')
+model = YOLO(
+'yolov8n.pt'
+)
+# model = YOLO("D:\\Dev_Vision\\Project\\runs\detect\\train\\weights\\last.pt")
+if 
+__name__ == 
+'__main__'
+: 
+# can khi chay bang GPU
+    
+model.train(
+data
+=
+'dataset.yaml'
+,
+epochs
+=
+50
+,
+imgsz
+=
+640
+,
+batch
+=
+2
+,
+optimizer
+=
+'SGD'
+)
+    metrics = model.val()
+Kết quả:
+Hình 2.11 Kết quả sau cải tiến mô hình
+Hình 2.12 Kết quả sau cải tiến mô hình
+Hình 2.13 Kết quả sau cải tiến mô hình
+Hình 2.1
+4
+ Kết quả sau cải tiến mô hình
+Hình 2.15 Kết quả sau cải tiến mô hình
+Hình 2.16 Kết quả sau khi cải tiến mô hình
+Hình 2.17 Kết quả sau cải tiến mô hình
+Nhận xét: 
+Dữ liệu cải tiến từ mô hình cải thiện khác nhiều so với lần 1 số trung bình mAP50 là 0.99 cao hơn 0.058 so với lần 1. Và mAP50-95 là 0.892 cao hơn 0.097 so với lần 1
+.
+6
+.
+MÔ PHỎNG
+6.
+1.
+Chương
+ trình
+import 
+cv2
+from 
+ultralytics 
+import 
+YOLO
+model = YOLO(
+"D:
+\\
+Dev_Vision
+\\
+ARM_ROBOT
+\\
+runs
+\\
+detect
+\\
+train2
+\\
+\weights
+\\
+best.pt"
+)
+cap = cv2.VideoCapture(
+"D:
+\\
+Dev_Vision
+\\
+Project
+\\
+all.mp4"
+)
+#cap = cv2.VideoCapture(1)
+while 
+cap.isOpened():
+    success
+, 
+frame = cap.read()
+    
+if 
+success:
+        results = model(frame)
+        annotated_frame = results[
+0
+].plot()
+        cv2.imshow(
+"YOLOv8 Inference"
+, 
+annotated_frame)
+        
+for 
+result 
+in 
+results:
+            
+print
+(
+"class"
+, 
+result.boxes.cls)
+            
+print
+(
+"xyxy"
+, 
+result.boxes.xyxy)
+            
+print
+(
+"conf"
+, 
+result.boxes.conf)
+        
+if 
+cv2.waitKey(
+1
+) & 
+0xFF 
+== 
+ord
+(
+"q"
+):
+            
+break
+    else
+:
+        
+break
+cap.release()
+cv2.destroyAllWindows()
+6.2 Kết qủa nhận diện
+Hình ảnh
+Kết quả
+Trường hợp: 
+1 màu tím 
+Kết quả:
+ chính xác
+Trường
+ hợp
+:
+ 
+1 màu xanh lá.
+Kết quả: 
+chính xác
+Trường hợp: 
+2 
+màu xanh và đỏ
+Kết quả:
+ chính xác.
+Trường hợp: 
+1 màu xanh dương
+Kết quả:
+ chính xác
+Trường hợp: 
+1 màu đỏ
+Kết quả:
+ chính xác
+Trường hợp: 
+2 màu tím và đỏ
+Kết quả:
+ chính xác
+Trường hợp: 
+2 màu xanh dương và xanh lá.
+Kết quả:
+ chính xác
+Trường hợp: 
+2 màu tím và xanh lá cây
+Kết quả:
+ chính xác 
+Trường hợp: 
+2 màu xanh dương và đỏ
+Kết quả:
+ 
+chính xác
+Trường hợp: 
+2 màu xanh lá và xanh dương
+Kết quả:
+ chính xác
+ 
+Bảng 2.1 Kết quả train các màu
+Nhận xét:
+Ưu
+ điểm mô hình
+: Khi lẻ từng màu thì nhận được độ chính xác rất cao.
+Khi cho nhiều màu trên băng truyền thì cũng không độ chính xác trung bình trên 0.9.
+7
+. 
+GIỚI THIỆU VỀ CAMERA
+ LOGITECH HD
+ 
+7.
+1.
+Giới
+ 
+thiệu
+Hình 2.18 Camera Logitech HD C270
+Camera Logitech HD C270 là một webcam có độ phân giải cao phổ biến được sử dụng cho các cuộc gọi video, hội nghị trực tuyến, và ghi lại video. Dưới đây là một số thông tin cơ bản về camera này:
+Độ phân giải video: C270 cung cấp video HD 720p (1280 x 720 pixels) với tỷ lệ khung hình tối đa 30 khung hình/giây, cho hình ảnh rõ nét và mượt mà trong các cuộc gọi video và ghi lại video.
+Chất lượng hình ảnh: Camera này có ống kính cung cấp hình ảnh rõ nét và sắc nét, với màu sắc tự nhiên và chi tiết tốt.
+Góc nhìn: Góc nhìn của C270 đủ rộng để bao quát một phòng nhỏ hoặc cho phép nhiều người cùng xuất hiện trong cùng một khung hình.
+Microphone tích hợp: C270 có microphone tích hợp cho phép bạn thực hiện cuộc gọi video và hội nghị trực tuyến mà không cần microphone bên ngoài.
+Kết nối USB: Camera này kết nối với máy tính qua cổng USB, làm cho việc cài đặt và sử dụng rất dễ dàng và tiện lợi.
+Hỗ trợ nhiều hệ điều hành: Logitech HD C270 tương thích với nhiều hệ điều hành, bao gồm Windows, macOS và Linux, làm cho nó trở thành một lựa chọn phổ biến cho nhiều người dùng.
+Phần mềm hỗ trợ: Logitech cung cấp phần mềm hỗ trợ cho webcam này, cho phép người dùng điều chỉnh các cài đặt hình ảnh, chất lượng âm thanh và thực hiện các chức năng khác.
+Kích thước nhỏ gọn: Thiết kế nhỏ gọn của C270 làm cho nó dễ dàng mang theo và sử dụng trên máy tính xách tay hoặc bàn làm việc.
+7.
+2.T
+hông
+ 
+tin
+ 
+cấu
+ 
+hình
+ 
+Jetson Nano
+Hình 2.19 Chi tiết bo mạch Jetson Nano
+Jetson Nano là một bo mạch vi xử lý nhúng (embedded) được phát triển bởi NVIDIA, được thiết kế để hỗ trợ việc phát triển các ứng dụng trí tuệ nhân tạo (AI) và máy học (Machine Learning) trên các thiết bị nhúng. Dưới đây là một số thông tin cơ bản về cấu hình của Jetson Nano:
+CPU: Quad-core ARM Cortex-A57 @ 1.43 GHz.
+GPU: 128-core NVIDIA Maxwell GPU.
+RAM: 4GB 64-bit LPDDR4 25.6 GB/s.
+Lưu trữ: Khe cắm thẻ nhớ microSD.
+Kết nối mạng: Gigabit Ethernet, Wi-Fi 802.11ac và Bluetooth.
+Cổng USB: 4 cổng USB 3.0, 1 cổng USB 2.0 Micro-B (nạp nguồn).
+Kết nối video: HDMI 2.0 và DisplayPort 1.2.
+Kết nối camera: MIPI CSI-2 DPHY lanes x4 cho camera.
+Kết nối hiển thị: MIPI DSI (Display Serial Interface) cho màn hình cảm ứng.
+Âm thanh: Âm thanh qua HDMI, âm thanh số trên GPIO.
+Kích thước: 100mm x 80mm.
+Hệ điều hành hỗ trợ: NVIDIA JetPack SDK, chạy trên Linux Ubuntu 18.04.
+7.3. Ứng Dụng
+Nhận diện và phân loại đối tượng: Sử dụng các mô hình học sâu như YOLO (You Only Look Once
+.
+ Jetson Nano có thể nhận diện và phân loại đối tượng trong thời gian thực từ hình ảnh hoặc video
+8
+. 
+GIỚI THIỆU VỀ ĐỘNG CƠ DC
+Giới thiệu
+Động cơ DC (Direct Current Motor) là một loại động cơ điện hoạt động dựa trên nguyên lý của sự tương tác giữa dòng điện và từ trường. Dòng điện chạy qua cuộn dây trong động cơ tạo ra một từ trường, và sự tương tác giữa từ trường này và từ trường từ một nam châm cố định (hoặc từ trường từ một nam châm gắn liền với rotor) tạo ra một lực đẩy, làm quay rotor của động cơ.
+                         
+Hình 2.20 Động cơ DC
+Cấu tạo
+Động cơ DC bao gồm một stator (phần tĩnh) và một rotor (phần quay). Stator chứa các cuộn dây dẫn điện được nối với nguồn điện và tạo ra từ trường, trong khi rotor chứa các cực từ hoặc nam châm để tương tác với từ trường tạo ra từ stator.
+Nguyên lý hoạt động
+Khi dòng điện được cung cấp vào stator, nó tạo ra một từ trường. Tương tác giữa từ trường này và từ trường từ nam châm trong rotor tạo ra một lực đẩy, làm quay rotor. Điều này tạo ra chuyển động quay của động cơ.
+Ứng dụng:
+Trong ngành công nghiệp động cơ DC được sử dụng trong các máy công cụ, đóng gói, tự động hóa nhà máy, xử lý vật liệu, in chuyển đổi. Ngoài ra chúng còn được sử dụng để chế tạo cánh tay robot vì sử chuyển đổi trơn tru và chính xác.
+9.
+ 
+ROBOT ARM
+ 
+ 
+Giới thiệu
+Một cánh tay robot có 
+5 
+độ tự do thường được thiết kế để có khả năng di chuyển và thực hiện các nhiệm vụ trong không gian 3 chiều một cách linh hoạt và hiệu quả
+. 
+Hình 2.21
+: cánh tay robot (arm robotic 5dof)
+Độ tự do (DOF): Mỗi cánh tay có thể di chuyển theo 
+5
+ hướng khác nhau, gồm ba hướng dịch chuyển (trục x, y và z) và ba hướng quay (quay xung quanh các trục x, y và z). Điều này cho phép cánh tay robot di chuyển và xoay trong không gian 3 chiều một cách linh hoạt.
+Cấu trúc cánh tay: Cánh tay 
+5
+ dof thường được cấu thành từ một loạt các khớp nối với nhau thông qua các khớp xoay. Các khớp này cho phép cánh tay di chuyển và xoay theo các độ tự do khác nhau.
+Ứng dụng: Cánh tay 
+5
+ dof thường được sử dụng trong nhiều ứng dụng công nghiệp và dịch vụ. Chúng có thể được sử dụng để thực hiện các nhiệm vụ như lắp ráp, hàn, cắt, và thậm chí là trong lĩnh vực y tế để thực hiện các ca phẫu thuật robot.
+Điều khiển: Để điều khiển một cánh tay 
+5
+ dof, hệ thống điều khiển thường sử dụng các thuật toán điều khiển và các cảm biến để theo dõi vị trí và hướng của cánh tay, đồng thời điều chỉnh các động cơ để thực hiện các phản ứng cần thiết.
+Tính linh hoạt và hiệu quả: Với 6 độ tự do, cánh tay 
+5
+ dof có khả năng di chuyển trong không gian 3 chiều một cách linh hoạt và hiệu quả. Điều này làm cho chúng trở thành lựa chọn phổ biến cho nhiều ứng dụng đòi hỏi độ chính xác cao và khả năng linh hoạt trong việc thực hiện nhiệm vụ.
+10
+. 
+GIỚI THIỆU HỆ THỐNG BĂNG TẢI
+Giới thiệu
+Băng tải (băng chuyền) hiểu đơn giản là một máy cơ khí dùng để vận chuyển
+các đồ vật từ điểm này sang điểm khác, từ vị trí A sang vị trí B. Thay vì vận chuyển
+sản phẩm bằng công nhân vừa tốn thời gian, chi phí nhân công lại tạo ra môi trường
+làm việc lộn xộn thì băng chuyền tải có thể giải quyết điều đó.Nó giúp tiết kiệm sức lao động, số lượng nhân công, giảm thời gian và tăng năng suất lao động.[7]
+Vì vậy băng chuyền, băng tải là một trong những bộ phận quan trọng trong dây
+chuyền sản xuất, lắp ráp của các nhà máy, xí nghiệp. Góp phần tạo nên một môi
+trường sản xuất hiện đại, khoa học và giải phóng sức lao động mang lại hiệu quả kinh
+tế cao cho công ty
+Hình 2.22 Chi tiết băng chuyền
+Cấu tạo
+- 
+Khung băng tải: thường được làm bằng nhôm định hình, thép sơn tĩnh điện hoặc
+ 
+inox.
+ - 
+Dây băng tải: Thường là dây băng PVC dày 2mm và 3mm hoặc dây băng PU
+dầy 1.5mm.
+- 
+Động cơ chuyền động: Là động cơ giảm tốc công suất 0.2KW, 0.4KW, 0.75KW,
+1.5KW, 2.2KW.
+- 
+Bộ điều khiển băng chuyền: Thường gồm có biến tần, sensor, timer, PLC...
+- 
+Cơ cấu truyền động gồm có: Rulo kéo, con lăn đỡ, nhông xích...
+- 
+Hệ thống bàn thao tác trên băng chuyền thường bằng gỗ, thép hoặc inox trên
+mặt có dán thảm cao su chống tĩnh điện.
+- 
+Hệ thống đường khí nén và đường điện có ổ cắm để lấy điện cho các máy dùng
+trên băng chuyền.
+- 
+Ngoài ra thường có thêm đường điện chiếu sáng.
+Ứng dụng:
+Băng tải, băng chuyền được ứng dụng trong các ngành sản xuất công nghiệp,
+chế biến thực phẩm, khai 
+thác,...
+nhằm giúp hỗ trợ tối đa cho doanh nghiệp trong quá
+trình vận chuyển hàng hóa nhanh chóng, an toàn, tiện lợi. Ngoài ra với hệ thống băng
+tải còn giúp doanh nghiệp tối ưu hóa được chi phí, tiết kiệm thời gian, hạn chế nguồn
+ 
+nhân lực
+. 
+1
+1
+. 
+GIỚI THIỆU HỆ ĐIỀU HÀNH TRÊN JETSON NANO
+Hệ điều hành chính thức được hỗ trợ trên Jetson Nano là NVIDIA JetPack, một bản phân phối của hệ điều hành Ubuntu Linux được tối ưu hóa cho việc phát triển trí tuệ nhân tạo (AI) và các ứng dụng máy học sâu trên nền tảng NVIDIA CUDA 
+Hình 2.23 Hệ điều hành Jetson Nano
+Dưới đây là một số điểm nổi bật về hệ điều hành trên Jetson Nano:
+Ubuntu Linux: NVIDIA JetPack cung cấp một bản phân phối của hệ điều hành Ubuntu Linux. Điều này mang lại sự quen thuộc và linh hoạt cho những người phát triển đã quen với hệ điều hành Linux, đồng thời cung cấp một môi trường phát triển mạnh mẽ cho các ứng dụng trí tuệ nhân tạo.
+Tối ưu hóa cho CUDA và cuDNN: Jetson Nano được tối ưu hóa cho việc sử dụng các thư viện CUDA và cuDNN của NVIDIA, cho phép người phát triển tận dụng sức mạnh tính toán song song của GPU để thực hiện các tác vụ máy học sâu và trí tuệ nhân tạo.
+Hỗ trợ cho các khung công cụ phát triển phổ biến: Jetson Nano hỗ trợ nhiều khung công cụ phát triển phổ biến như TensorFlow, PyTorch, và MXNet. Điều này giúp cho việc phát triển và triển khai các mô hình máy học sâu trở nên dễ dàng hơn trên Jetson Nano.
+Đa nhiệm và đa nhiệm: Hệ điều hành trên Jetson Nano cho phép chạy nhiều tiến trình đồng thời và hỗ trợ tính năng đa nhiệm. Điều này cho phép người dùng chạy các ứng dụng và dịch vụ khác nhau cùng một lúc trên Jetson Nano mà không gặp trở ngại.
+Cập nhật và hỗ trợ: NVIDIA thường xuyên cung cấp các bản cập nhật và bảo trì cho hệ điều hành Jetson Nano, đảm bảo tính ổn định và bảo mật của hệ thống.
+Tóm lại, hệ điều hành trên Jetson Nano là một phiên bản tối ưu hóa củ
+a Ubuntu Linux, 
+được tối ưu hóa cho việc phát triển trí tuệ nhân tạo và máy học sâu trên nền tả
+ng 
+NVIDIA CUDA và cuDNN. Điều này tạo điều kiện thuận lợi cho việc phát triển các ứng dụng trí tuệ nhân tạo và máy học sâu trên Jetson Nano.
+Top of Form
+1
+2
+.
+GIỚI THIỆU VỀ CÁC CHUẨN GIAO TIẾP
+Chuẩn giao tiếp Uart:
+Giao tiếp UART (Universal Asynchronous Receiver/Transmitter) là một giao thức truyền thông nối tiếp phổ biến trong các hệ thống điện tử và nhúng. Nó cho phép truyền và nhận dữ liệu giữa các thiết bị thông qua các dây truyền dẫn đơn giản như dây dữ liệu (TX), dây nhận dữ liệu (RX), và dây đất (GND).
+Hình 2.24 Giao thức UART
+Bản chất không đồng bộ: Giao tiếp UART là một giao thức không đồng bộ, nghĩa là không có một tín hiệu xung đồng hồ chung giữa các thiết bị truyền và nhận. Thay vào đó, các thiết bị gửi và nhận dữ liệu dựa trên một tốc độ truyền cố định được đặt trước.
+Tín hiệu truyền dữ liệu (TX) và nhận dữ liệu (RX): Trong giao tiếp UART, có ít nhất hai dây chính: TX (truyền dữ liệu) và RX (nhận dữ liệu). TX của một thiết bị kết nối với RX của thiết bị khác và ngược lại, tạo thành một kênh truyền thông hai chiều.
+Tốc độ truyền (Baud rate): Tốc độ truyền là số lượng bit dữ liệu được truyền mỗi giây qua kênh truyền. Nó được đo bằng baud rate (bps - bits per second). Các tốc độ truyền phổ biến bao gồm 9600, 19200, 38400, 115200 bps, và nhiều tốc độ khác nữa.
+Dữ liệu và định dạng truyền: Dữ liệu thường được truyền theo các gói hoặc khung, bao gồm bit dữ liệu, bit stop, và bit kiểm tra (parity bit) (tuỳ chọn). Các định dạng thông thường bao gồm 7 hoặc 8 bit dữ liệu, 1 hoặc 2 bit stop, và kiểm tra parity có thể là none, even hoặc odd.
+Độ tin cậy và đơn giản: Giao tiếp UART thường đơn giản và dễ triển khai. Mặc dù nó không được bảo đảm bởi các cơ chế phục hồi lỗi tự động, nhưng nó vẫn phổ biến trong các ứng dụng không yêu cầu tính toàn vẹn dữ liệu cao hoặc trong môi trường không có nhiều nhiễu.
+Ứng dụng: UART được sử dụng rộng rãi trong các ứng dụng như điều khiển thiết bị, truyền dữ liệu giữa vi điều khiển và các cảm biến, mô-đun không dây như Bluetooth và Wi-Fi, và nhiều ứng dụng nhúng khác.
+Truyền thông Uart:
+Hình 2.25 Truyền thông UART
+Start bit (Bit bắt đầu): Bit này bắt đầu mỗi khung dữ liệu và được sử dụng để đồng bộ hóa nhận dữ liệu. Start bit thường là mức logic thấp (0).
+Dữ liệu (Data bits): Đây là các bit dữ liệu thực sự được truyền qua kênh truyền. Số lượng bit dữ liệu thường là 7 hoặc 8 bit, nhưng cũng có thể là 5 hoặc 6 bit tùy thuộc vào cài đặt của hệ thống. Mỗi bit dữ liệu mang thông tin hoặc dữ liệu cần truyền.
+Bit kiểm tra (Parity bit): Bit kiểm tra là một bit được sử dụng để kiểm tra tính toàn vẹn của dữ liệu. Nó có thể được sử dụng để kiểm tra số lượng bit dữ liệu có số lẻ (parity odd), số chẵn (parity even) hoặc không có kiểm tra (no parity). Nếu được sử dụng, bit kiểm tra sẽ được tính toán dựa trên các bit dữ liệu và được bổ sung vào cuối khung dữ liệu.
+Bit stop (Stop bit): Bit stop là một hoặc nhiều bit dùng để đánh dấu kết thúc của mỗi khung dữ liệu. Nó cung cấp thời gian cho các thiết bị nhận để chuẩn bị cho khung dữ liệu tiếp theo. Thông thường, số lượng bit stop là 1 hoặc 2.
+Điều kiện logic (Logic levels): Các điều kiện logic là các trạng thái mức logic mà các tín hiệu TX (truyền) và RX (nhận) được biểu diễn. Thông thường, mức logic cao (1) được biểu diễn bằng điện áp cao và mức logic thấp (0) được biểu diễn bằng điện áp thấp.
+1
+3
+.
+PHƯƠNG PHÁP PHÂN LOẠI SẢN PHẨM THEO MÀU SẮC
+Sử dụng mô hình Yolo8 để train dữ liệu và phân loại màu sắc 
+Hình 2.27 Minh họa mô hình train
+CHƯƠNG 3
+THIẾT KẾ VÀ THI CÔNG MÔ HÌNH
+3.1.
+ 
+Thiết kế
+3.1.1.
+ 
+Sơ đồ khối và chức năng các
+ 
+khối
+a.
+ 
+S
+ơ đồ khối hệ thống
+Hình 3.1 Sơ đồ khối
+3.1.
+2
+.
+Chức
+ năng của các khối
+3.1.
+3
+.
+ 
+Sơ đồ
+ kết nối toàn mạch
+Sơ đồ kết nối phần cứng nhận diện và điều khiển cánh tay
+Hình 3.2 Sơ đồ kết nối toàn bộ hệ thống
+Sơ đồ phần cứng điều khiển băng chuyền
+Hình 3.3 Sơ đồ phần cứng điều khiển băng chuyền
+Sơ đồ kết nối Server và giao diện
+Hình 3.4 Sơ đồ kết nối Server và giao diện
+3.
+2.Thử
+ nghiệm phần cứng:
+Thử nghiệm giao tiếp với Robot Arm bằng Uart:
+Chuẩn bị phần cứng:
+Hình 3.5 Cánh tay robot
+Phần mềm hỗ trợ:RC Servo Controller
+Hình 3.6 Phần mềm điều khiển Servo
+Tiến hành thử nghiệm:
+Hình 3.7 Test hoạt động cánh tay
+Kết quả:
+Cánh tay hoạt động tốt, nhưng một số khớp của cánh tay hoạt động hơi chậm.
+Hình 3.8 Mô hình phân loại
+Lắp ráp và thử nghiệm băng chuyền:
+Hình 3.9 Thi công mô hình phân loại
+Hình 3.10 lắp camera
+Lắp đặt biến trở và lắp đặt Relay:
+Biến trở: Dùng để điều chỉnh tốc độ của băng truyền
+Relay: Ngừng băng truyền khi nhận tín hiệu từ máy tính nhúng
+Hình 3.11 lắp biến trở và relay
+Kết quả:
+Băng truyền hoạt động tốt, tốc độ ổn định.
+Hình 3.12 Tiến hành thử nghiệm hoạt động băng chuyền
+Thiết kế vỏ hộp cho máy tính nhúng Jetson Nano
+Sử phần mềm Fusion 360 chuyên dụng cho việc thiết kế.
+Hình 3.13 Phần mềm thiết kế hộp đựng board
+Sử dụng máy in 3D để in ra sản phẩm:
+Hình 3.14 Máy in 3D
+Mô hình mà nhóm thiết kế:
+Phần nắp hộp màu trắng và phần thân hộp màu đỏ
+Hình 3.15 
+Mặt trên hộp đựng
+Hình 3.16 Mặt dưới hộp đựng
+Hình 3.17 Cổng kết nối
+ 
+Kết quả:
+Tiến hành in
+Hình 3.18 Tiến hành in 3D
+Kết quả in 3D
+Hình 3.19 Kết quả in
+Kết quả in mặt sau
+Hình 3.20 Kết quả in mặt sau
+3.3 
+Lưu đồ giải thuật
+3.
+4
+ Code chạy điều khiển
+ 
+from
+ ultralytics 
+import
+ 
+YOLO
+import
+ 
+cv2
+import
+ 
+math
+import
+ 
+torch
+ 
+import
+ Jetson.
+GPIO
+ 
+as
+ 
+GPIO
+from
+ time 
+import
+ 
+sleep
+import
+ 
+serial
+GPIO
+.setmode(
+GPIO
+.
+BOARD
+)
+# 
+start
+ webcam
+cap 
+=
+ cv2.
+VideoCapture
+(
+1
+)
+cap.
+set
+(
+3
+, 
+640
+)
+cap.
+set
+(
+4
+, 
+480
+)
+#
+set
+ I/O relay
+l1 
+=
+ 
+11
+#
+set
+ uart 
+ser 
+=
+ 
+serial.
+Serial
+(
+    
+# port='/dev/ttyTHS0',
+    
+port
+ 
+=
+ 
+'
+/dev/ttyACM0
+'
+,
+    
+# port='COM4',
+    
+baudrate
+=
+115200
+,
+    
+timeout
+=
+1
+)
+GPIO
+.setup(l1, 
+GPIO
+.
+OUT
+)
+GPIO
+.output(l1, 
+GPIO
+.
+HIGH
+)
+# model
+model 
+=
+ 
+YOLO
+(
+"
+/home/jetson/Desktop/T/ARM_ROBOT/models/bestv6.pt
+"
+)
+if
+ torch.cuda.
+is_
+available
+(
+):
+    torch.cuda.
+set_
+device
+(
+0
+)
+    dev 
+=
+'
+cuda:0
+'
+    
+print
+(
+"
+oke GPU
+"
+)
+ 
+model.
+to
+(
+device
+=
+dev)
+# object classes
+classNames 
+=
+ [
+"
+violet
+"
+,
+"
+green
+"
+,
+"
+blue
+"
+,
+"
+red
+"
+]
+ser.
+write
+(
+b
+'
+#1P1386#2P2271#3P1957#4P500#5P614#6P1500#7P1500#8P1500#9P1500#10P1500#11P1500#12P1500#13P1500#14P1500#15P1500#16P1500#17P1500#18P1500#19P1500#20P1500#21P1500#22P1500#23P1500#24P1500#25P1500#26P1500#27P1500#28P1500#29P1500#30P1500#31P1500#32P1500T500D500
+\r\n
+'
+)
+sleep
+(
+2
+)
+cond 
+=
+ [
+b
+'
+#1P2214#2P1643#3P2500#4P1614#5P2500T1000D500
+\r\n
+'
+, 
+b
+'
+#1P2157#3P2186T1000D500
+\r\n
+'
+, 
+b
+'
+#1P1757#2P1814#3P2500#4P1529T1000D500
+\r\n
+'
+, 
+b
+'
+#1P1814#5P2500T1000D500
+\r\n
+'
+]
+def
+ 
+armRobot
+(
+cc
+):
+    
+GPIO
+.output(l1, 
+GPIO
+.
+LOW
+)
+    
+ser.
+write
+(
+b
+'
+#1P1386#2P2271#3P1957#4P500#5P614#6P1500#7P1500#8P1500#9P1500#10P1500#11P1500#12P1500#13P1500#14P1500#15P1500#16P1500#17P1500#18P1500#19P1500#20P1500#21P1500#22P1500#23P1500#24P1500#25P1500#26P1500#27P1500#28P1500#29P1500#30P1500#31P1500#32P1500T500D500
+\r\n
+'
+)
+    
+sleep
+(
+2
+)
+    
+ser.
+write
+(
+b
+'
+#1P1329#2P1843#3P2443#4P1700#5P614T1000D500
+\r\n
+'
+)
+    
+sleep
+(
+2
+)
+    
+ser.
+write
+(
+b
+'
+#1P1243#2P1500#3P2243#4P1843#5P500T1000D500
+\r\n
+'
+)
+    
+sleep
+(
+2
+)
+    
+ser.
+write
+(
+b
+'
+#4P1843#5P2500T1000D500
+\r\n
+'
+)
+    
+sleep
+(
+2
+)
+    
+ser.
+write
+(cond[
+cc
+])
+    
+sleep
+(
+2
+)
+    
+ser.
+write
+(
+b
+'
+#5P500T1000D500
+\r\n
+'
+)
+    
+sleep
+(
+2
+)
+    
+GPIO
+.output(l1, 
+GPIO
+.
+HIGH
+)
+while
+ 
+True
+:
+    
+GPIO
+.output(l1, 
+GPIO
+.
+HIGH
+)
+    success, img 
+=
+ 
+cap.
+read
+()
+    results 
+=
+ 
+model(
+img, 
+stream
+=
+True
+)
+    flag 
+=
+ 
+0
+    
+# coordinates
+    
+for
+ r 
+in
+ results:
+        boxes 
+=
+ 
+r.boxes
+        
+for
+ box 
+in
+ boxes:
+            
+# bounding box
+            x1, y1, x2, y2 
+=
+ 
+box.xyxy
+[
+0
+]
+            x1, y1, x2, y2 
+=
+ 
+int
+(x1), 
+int
+(y1), 
+int
+(x2), 
+int
+(y2) 
+# convert to int values
+            
+# 
+put
+ box in cam
+            cv2.
+rectangle
+(img, (x1, y1), (x2, y2), (
+255
+, 
+0
+, 
+255
+), 
+3
+)
+            
+# confidence
+            confidence 
+=
+ 
+math.
+ceil
+((box.conf[
+0
+]
+*
+100
+))
+/
+100
+            
+print
+(
+"
+Confidence --->
+"
+,confidence)
+            
+# class name
+            
+cls
+ 
+=
+ 
+int
+(
+box.cls[
+0
+])
+            label 
+=
+ classNames[
+cls
+]
+            
+print
+(
+"
+Class name -->
+"
+, classNames[
+cls
+])
+            
+if
+ 
+labelPredict 
+!
+=
+ label:
+                labelPredict 
+=
+ label
+            
+else
+:
+                
+break
+            
+armRobot
+(
+cls
+)
+    cv2.
+imshow
+(
+'
+Webcam
+'
+, img)
+    
+if
+ cv2.
+waitKey
+(
+1
+) 
+==
+ 
+ord
+(
+'
+q
+'
+):
+        
+break
+cap.
+release
+()
+cv2.
+destroyAllWindows
+()
+KẾT LUẬN
+Qua
+ thời gian nguyên cứu và thực hiện đề tài, với sự hướng dẩn tận tình của giáo viên hướng dẩn, thầy cô và bạn bè, đề tài đã hoàn thành đúng thời gian và yêu cầu đặt ra. 
+Tuy nhiên, do thời gian hạn chế và kiến thức có giới hạn, nên chúng em chỉ dừng lại ở mức hoàn chỉnh mô hình cơ bản. Để ứng dụng trong thực tế cần phải phát triển một mô hình có độ chính xác cao hơn, hình dạng và kích thước tiện lợi sử dụng hơn. Bên cạnh, để hiện thị kết quả linh hoạt hơn cần phát triển thành một web server có thể truy cập và theo dõi bằng tên miền
+, kết nối và theo dỏi từ xa, có khả năng diều kiển được từ xa, lưu trữ số lượng đếm được lên database, có thể phân loại từng loại sản phẩm khác 
+nhau.
+.
+Qua việc thực hiện đề tài này, chúng em đã có cơ hội tìm hiểu sâu hơn và củng cố được những kiến thức đã học ở trường, từ đó đã ứng được những kiến thức đã học vào thực tế. Việc thực hiện đề tài cũng là bước đầu giúp chúng em tập làm quen với công tác nghiên cứu khoa học, điều đó giúp chúng em có đủ tự tin hơn trong các công việc nghiên cứu làm việc sau này. Sản phẩm của đề tài này với hy vọng sẽ góp thêm một ý tưởng để xây dựng cho các mô hình
+ 
+ 
+ cánh tay robot phân loại sản phẩm trên băng chuyền hiển thị giao 
+diện  cho
+ người dùng
+TÀI LIỆU THAM KHẢO
+https://docs.ultralytics.com/modes/train/
+ [1]
+[1] 
+"Ultralytics YOLOv8," [Online]. Available: https://docs.ultralytics.com/modes/train/.
