@@ -63,7 +63,9 @@ An ecosystem is only useful if the end-user can interact with it effortlessly.
 
 ### Mobile App Interfaces
 
-Here is a glimpse of the mobile application enabling farmers and stakeholders to monitor the microclimate easily:
+Here is a full video demonstration of the mobile application, followed by a glimpse of the interfaces enabling farmers and stakeholders to monitor the microclimate easily:
+
+{% include embed/youtube.html id='oCIw2voIUg0' %}
 
 ![App Dashboard](/assets/img/projects/microclimate/page21_img1.png)
 ![Historical Charts](/assets/img/projects/microclimate/page21_img2.png)
