@@ -3,6 +3,8 @@ title: "Loupe: Ultra-Miniature Wearable Device"
 date: 2026-04-05 08:08:00 +0700
 categories: [Projects, Hardware]
 tags: [wearable, nRF52832, pcb-design, sensor]
+image:
+  path: /assets/img/projects/loupe/page4_img3.jpeg
 ---
 
 ## Product Overview
